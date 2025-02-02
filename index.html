@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dad Joke Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Dad Joke Generator</h1>
+        <div id="joke-container">
+            <div id="joke-text">Ready for a laugh? Click the button below!</div>
+            <div id="loading-animation" class="hidden">
+                <div class="spinner"></div>
+                <p>Thinking of a joke...</p>
+            </div>
+            <div id="error-message" class="hidden">
+                <i class="fas fa-exclamation-triangle"></i>
+                <p>Oops! The jokes are on a break. Try again later!</p>
+            </div>
+        </div>
+        <div id="category-buttons">
+            <button class="category-btn active" data-category="random">Random</button>
+            <button class="category-btn" data-category="food">Food</button>
+            <button class="category-btn" data-category="animals">Animals</button>
+            <button class="category-btn" data-category="friend">Friends</button>
+        </div>
+        <button id="tell-me-joke-btn">TELL ME A JOKE</button>
+        <div id="visuals">
+            <img src="https://img.icons8.com/color/96/000000/lol.png" alt="Laughing Emoji" id="laughing-emoji">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
